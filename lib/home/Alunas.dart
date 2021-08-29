@@ -15,7 +15,7 @@ class _AlunasState extends State<Alunas> {
   ]; //lista da classe
   @override
   Widget build(BuildContext context) {
-    /* return ListView.builder(
+   return ListView.builder(
         // lista para exibir a lista das alunas
         itemCount: listaAlunas.length,
         itemBuilder: (context, indice) {
@@ -36,9 +36,7 @@ class _AlunasState extends State<Alunas> {
               aluna.treino,
             ),
           );
-        }); */
-      return Container(
-        child: Center(child: Text("Alunas"),)
-      );
+        }); 
+      
   }
 }

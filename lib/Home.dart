@@ -11,7 +11,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  //int _indiceAtual = 0;
+  int _indiceAtual = 0;
   @override
   Widget build(BuildContext context) {
     // ignore: unused_local_variable
@@ -63,13 +63,13 @@ class _HomeState extends State<Home> {
       ), */
       body: Container (
         padding: EdgeInsets.all(16),
-        //child: telas[_indiceAtual],
+        child: home[_indiceAtual],
       ),
       bottomNavigationBar: BottomNavigationBar(
        // currentIndex: _indiceAtual,
         onTap: (indice) {
           setState(() {
-           // _indiceAtual = indice;
+           _indiceAtual = indice;
           });
         },
         type: BottomNavigationBarType.fixed, //fixed define uma cor de fundo fixa(para até 3 botoes), shifting - troca a cor dos icones
