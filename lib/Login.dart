@@ -13,7 +13,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
+      body: Container(
       decoration: BoxDecoration(color: Color(0xff00296b)),
       padding: EdgeInsets.all(16),
       child: Center(
@@ -72,28 +72,29 @@ class _LoginState extends State<Login> {
                         // colocar borda no botão
                         borderRadius: BorderRadius.circular(32)),
                     onPressed: () {
-                      Navigator.push(context,
-                      MaterialPageRoute(
-                        builder: (context) => Home() //conecta com o Contato.dart
-                      )
-                    );
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  Home() //conecta com o Contato.dart
+                              ));
                     },
                   )),
               Center(
                 child: GestureDetector(
-                  child: Text(
-                    "Não tem conta? Clique aqui e entre em contato com a gente",
-                     style: TextStyle(color: Colors.white),
-                  ),
-                  onTap: () {
-                    // pagina que ira levar quando clicar em nao tem conta
-                    Navigator.push(context,
-                      MaterialPageRoute(
-                        builder: (context) => Contato() //conecta com o Contato.dart
-                      )
-                    );
-                  }
-                ),
+                    child: Text(
+                      "Não tem conta? Clique aqui e entre em contato com a gente",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    onTap: () {
+                      // pagina que ira levar quando clicar em nao tem conta
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  Contato() //conecta com o Contato.dart
+                              ));
+                    }),
               )
             ],
           ),

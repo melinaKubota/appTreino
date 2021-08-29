@@ -25,7 +25,13 @@ class _HomeState extends State<Home> {
         title: Text("Corrida Para Mulheres"),
         actions: [
           IconButton(
+
             onPressed: (){
+              Navigator.push(context,
+                      MaterialPageRoute(
+                        builder: (context) => Perfil() //conecta com o Contato.dart
+                      )
+                    );
 
             }, 
             icon: Icon(Icons.account_circle)
