@@ -22,7 +22,7 @@ class _HomeState extends State<Home> {
     ];
     return Scaffold(
       appBar: AppBar(
-        title: Text("Corrida Para Mulheres"),
+        title: Text("Corrida Para Mulheres",),
         actions: [
           IconButton(
 
@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
                     );
 
             }, 
-            icon: Icon(Icons.account_circle)
+            icon: Icon(Icons.account_circle,)
             ),
         ],
       ),
@@ -68,7 +68,7 @@ class _HomeState extends State<Home> {
         ], */
       ), */
       body: Container (
-        padding: EdgeInsets.all(16),
+        padding: EdgeInsets.all(16,),
         child: home[_indiceAtual],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -84,15 +84,15 @@ class _HomeState extends State<Home> {
           BottomNavigationBarItem(// a barra que fica em baixo
               //backgroundColor: Colors.orange, (CASO QUEIRA QUE FIQUE NESSA CORES QUANDO SELECIONA, COLOCAR SHIFTING NO TYPE BOTTOM NAVIGATOR)
               label: ("Home"),
-              icon: Icon(Icons.home)),
+              icon: Icon(Icons.home,),),
           BottomNavigationBarItem(
               //backgroundColor: Colors.red,
               label: ("Alunas"),
-              icon: Icon(Icons.people)),
+              icon: Icon(Icons.people,),),
           BottomNavigationBarItem(
               //backgroundColor: Colors.blue,
               label: ("Agenda"),
-              icon: Icon(Icons.calendar_today)),
+              icon: Icon(Icons.calendar_today,),),
           /* BottomNavigationBarItem(
               //backgroundColor: Colors.green,
               label: ("Perfil"),

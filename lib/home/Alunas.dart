@@ -19,7 +19,7 @@ class _AlunasState extends State<Alunas> {
         itemCount: listaAlunas.length,
         itemBuilder: (context, indice) {
           Aluna aluna = listaAlunas[indice];
-          return ListTile(
+          return ListTile(//cria cada um dos itens da lista
               contentPadding: EdgeInsets.fromLTRB(16, 8, 16, 8),
               leading: CircleAvatar(
                 //fotinha da aluna
